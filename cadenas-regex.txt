@@ -1,0 +1,49 @@
+REGEX *************************************************
+
+Regex filtro metros cuadrados
+-----------------------------
+
+Al final deberia haber el string "cubiertos", "totales", "interiores", "exteriores" pero es muy complejo
+
+#(\d{1,}\,?\.?\d{1,})\s?[mM](etros|c2?|[tTsS]{1,3}2?|2?)
+
+\d{0,4}\,?\.?\d{0,4}? ?(m2|mc|metros|mts|mt2)
+
+Regex filtro precios dolares y pesos
+------------------------------------
+
+busco valores de mas de 5 cifras (2 cifras que puede estar separadas por punto o coma)
+
+(usd|u\$d|u\$s|us\$|dolares) ?(\d{2,}(\,|\.)\d{0,3}\,?\.?\d{0,3}\,?\.?\d{0,3}) ?(?!(.*m2|.*mc|.*metros))
+ 
+ - busco cualquier precio en dolares que no este precedido por cochera
+
+^(?!.*cochera).*(usd|u\$d|u\$s|us\$|dolares) ?(\d{2,}(\,|\.)\d{0,3}\,?\.?\d{0,3}\,?\.?\d{0,3}) ?(?!(.*m2|.*mc|.*metros))
+
+Regex cochera 
+-------------
+
+ - para agregar el campo cochera
+ - el string "cochera" no debe ser precedido o sucedido por cadenas de caracteres que nieguen su existencia.
+
+(?<!sin )(?<!no incluye )(?<!no posee )cochera(?! no incluye)(?! no incluida)
+
+Regex Pileta
+------------
+
+- para agregar el campo pileta/piscina
+- negative lookahead. Pileta/Piscina no debe tener como string "de baño", "de cocina", etc.
+- no se niega la falta de pileta. Pero hay que tener cuidado porque puede hacer referencia a pileta de baño o cocina, ya que es un termino generico.
+
+
+pileta(?! de baño)(?! de cocina)
+
+piscina|pileta(?! de baño)(?! de cocina)
+
+Regex Ambientes
+---------------
+
+- positive lookahead para validar que el dato numerico sea anterior a la cadena "ambientes" o "amb"
+
+\d{1,4} (?=ambientes)(?=amb)
+
