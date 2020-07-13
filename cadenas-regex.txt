@@ -1,5 +1,8 @@
 REGEX *************************************************
 
+variables ejecucion:
+- key insensitive
+
 Regex filtro metros cuadrados
 -----------------------------
 
