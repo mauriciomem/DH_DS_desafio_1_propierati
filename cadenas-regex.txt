@@ -5,9 +5,7 @@ Regex filtro metros cuadrados
 
 Al final deberia haber el string "cubiertos", "totales", "interiores", "exteriores" pero es muy complejo
 
-#(\d{1,}\,?\.?\d{1,})\s?[mM](etros|c2?|[tTsS]{1,3}2?|2?)
-
-\d{0,4}\,?\.?\d{0,4}? ?(m2|mc|metros|mts|mt2)
+(\d{0,4}\,?\.?\d{0,4})? ?(m2|mc|metros|mts|mt2)
 
 Regex filtro precios dolares y pesos
 ------------------------------------
@@ -45,5 +43,5 @@ Regex Ambientes
 
 - positive lookahead para validar que el dato numerico sea anterior a la cadena "ambientes" o "amb"
 
-\d{1,4} (?=ambientes)(?=amb)
+(\d{1,4})(?= amb)
 
