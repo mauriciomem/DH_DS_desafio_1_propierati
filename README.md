@@ -2,23 +2,23 @@
 
 ## Introducción
 
-En el presente proyecto, tomando como punto de partida un dataset de la inmobiliaria Properati no normalizado, con registros faltantes y/o no nomenclados, se aplicaron tecnicas de data wrangling con la finalidad de identificar y extraer datos relevantes del mercado de propiedades en Argentina, enfocandose en la Ciudad de Buenos Aires y provincia de Buenos Aires.
+En el presente proyecto, tomando como punto de partida un dataset de la inmobiliaria Properati no normalizado, con registros faltantes y/o no nomenclados, se aplicaron técnicas de data wrangling con la finalidad de identificar y extraer datos relevantes del mercado de propiedades en Argentina, enfocándose en la Ciudad de Buenos Aires y provincia de Buenos Aires.
 
- El alcace del trabajo consistio en las siguientes tareas:
+ El alcance del trabajo consistió en las siguientes tareas:
  
- * Analisis de distribución.
+ * Análisis de distribución.
  * Relevancia de variables.
- * Dependencia y relacion entre variables.
- * Búsqueda de errores y evaluacion de correcciones.
+ * Dependencia y relación entre variables.
+ * Búsqueda de errores y evaluación de correcciones.
  * Política de llenado de valores nulos, si era posible.
- * Identificacion y evaluacion de outliers.
+ * Identificación y evaluación de outliers.
  * Trabajo de expresiones regulares para:
    * Identificar valores faltantes sobre variables existentes
    * Identificación de variables que sumen al objetivo.
  * Búsqueda y eliminación de registros duplicados.
  * Búsqueda y eliminación de registros únicos que finalmente no puedan ser utilizados para el cumplimiento del objetivo.
  
- El trabajo tiene como resultado la confeccion de un nuevo dataset para desarrollar un modelo de regresión que permita predecir el precio por metro cuadrado de una propiedad. Para mas informacion ver (Desafio 2 - Modelado de datos)[https://github.com/mauriciomem/DH_DS_desafio_2_properati]
+ El trabajo tiene como resultado la confeccion de un nuevo dataset para desarrollar un modelo de regresión que permita predecir el precio por metro cuadrado de una propiedad. Para mas información ver (Desafio 2 - Modelado de datos)[https://github.com/mauriciomem/DH_DS_desafio_2_properati]
 
 ### Integrantes
 
