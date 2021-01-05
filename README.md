@@ -18,7 +18,7 @@ En el presente proyecto, tomando como punto de partida un dataset de la inmobili
  * Búsqueda y eliminación de registros duplicados.
  * Búsqueda y eliminación de registros únicos que finalmente no puedan ser utilizados para el cumplimiento del objetivo.
  
- El trabajo tiene como resultado la confeccion de un nuevo dataset para desarrollar un modelo de regresión que permita predecir el precio por metro cuadrado de una propiedad. Para mas información ver ![Desafio 2 - Modelado de datos](https://github.com/mauriciomem/DH_DS_desafio_2_properati)
+ El trabajo tiene como resultado la confeccion de un nuevo dataset para desarrollar un modelo de regresión que permita predecir el precio por metro cuadrado de una propiedad. Para mas información ver [Desafio 2 - Modelado de datos](https://github.com/mauriciomem/DH_DS_desafio_2_properati)
 
 ### Integrantes
 
